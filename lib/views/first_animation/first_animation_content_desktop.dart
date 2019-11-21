@@ -1,12 +1,11 @@
+import 'package:animation_presentation/widgets/slide_stack.dart/slide_stack.dart';
 import 'package:flutter/material.dart';
 
 class FirstAnimationContentDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 800,
-      width: 2000,
-      color: Colors.orange,
+    return SlideStack(
+      children: <Widget>[Text('hello')],
     );
   }
 }
