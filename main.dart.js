@@ -20704,7 +20704,7 @@ I:function(a){var u=null
 return new T.er(C.nS,T.kn(H.b([L.yN(this.d),new T.cs(30,u,u,u),new U.k0(this.c,this.e,u)],[N.aZ]),C.bm,C.aP),u)}}
 V.AQ.prototype={
 I:function(a){var u=null,t=S.e3(u,u,H.b([new O.bD(0,C.N,C.f,16)],[O.bD]),C.fp,u,u,C.G)
-return M.bW(u,T.vw(H.b([new B.AR(u),new V.nd("Medium",C.o6,"medium",u),new V.nd("Slack",C.o5,"slack",u)],[N.aZ]),C.bm,C.aP),u,u,t,u,u,u,u,u,275)}}
+return M.bW(u,T.vw(H.b([new B.AR(u),new V.nd("Medium",C.o6,"https://medium.com/flutter-i%CC%87zmir",u),new V.nd("Slack",C.o5,"https://flutterizmir.slack.com/",u)],[N.aZ]),C.bm,C.aP),u,u,t,u,u,u,u,u,275)}}
 B.AR.prototype={
 I:function(a){var u=null
 return M.bW(C.a6,T.vw(H.b([],[N.aZ]),C.bm,C.jN),C.b_,u,u,u,150,u,u,u,u)}}
