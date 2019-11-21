@@ -1,4 +1,5 @@
 import 'package:animation_presentation/constants/app_colors.dart';
+import 'package:animation_presentation/constants/social_urls.dart';
 import 'package:animation_presentation/widgets/navigation_drawer/drawer_item.dart';
 import 'package:animation_presentation/widgets/navigation_drawer/navigation_drawer_header.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +21,8 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawerItem('Medium', FontAwesomeIcons.mediumM, "medium"),
-          DrawerItem('Slack', FontAwesomeIcons.slack, "slack"),
+          DrawerItem('Medium', FontAwesomeIcons.mediumM, mediumUrl),
+          DrawerItem('Slack', FontAwesomeIcons.slack, slackUrl),
         ],
       ),
     );
