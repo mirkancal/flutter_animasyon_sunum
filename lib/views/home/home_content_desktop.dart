@@ -10,13 +10,14 @@ class HomeContentDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return SlideStack(
       children: <Widget>[
-        _Title(),
+        _MainTitle(),
       ],
     );
   }
 }
 
-class _Title extends StatelessWidget {
+class _MainTitle extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Align(
