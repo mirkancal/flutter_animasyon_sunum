@@ -29,6 +29,13 @@ class NavigationService {
   }
 
   // Add new routes here, also in [router.dart]
-  List<String> routes = [HomeRoute, FirstAnimation];
+  List<String> routes = [
+    HomeRoute,
+    AnimationFunctionsSlideRoute,
+    ImplicitAnimationsSlideRoute,
+    AnimatedOpacitySlideRoute,
+    AnimatedContainerSlideRoute,
+    AnimatedPositionedSlideRoute,
+  ];
   int currentIndex = 0;
 }

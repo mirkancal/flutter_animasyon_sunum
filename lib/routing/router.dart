@@ -1,6 +1,11 @@
 import 'package:animation_presentation/routing/route_names.dart';
-import 'package:animation_presentation/views/first_animation/first_animation_view.dart';
+import 'package:animation_presentation/views/animated_container_slide/animated_container_slide_view.dart';
+import 'package:animation_presentation/views/animated_opacity_slide/animated_opacity_slide_view.dart';
+import 'package:animation_presentation/views/animated_positioned_slide/animated_positioned_slide_view.dart';
+import 'package:animation_presentation/views/animation_functions_slide/animation_functions_slide_view.dart';
 import 'package:animation_presentation/views/home/home_view.dart';
+import 'package:animation_presentation/views/implicit_animations/implicit_animations_slide_view.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,8 +14,27 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case HomeRoute:
       return _getPageRoute(HomeView(), settings.name);
       break;
-    case FirstAnimation:
-      return _getPageRoute(FirstAnimationView(), settings.name);
+
+    case AnimationFunctionsSlideRoute:
+      return _getPageRoute(AnimationFunctionsSlideView(), settings.name);
+      break;
+
+    case ImplicitAnimationsSlideRoute:
+      return _getPageRoute(ImplicitAnimationsSlideView(), settings.name);
+      break;
+
+    case AnimatedOpacitySlideRoute:
+      return _getPageRoute(AnimatedOpacitySlideView(), settings.name);
+      break;
+
+    case AnimatedContainerSlideRoute:
+      return _getPageRoute(AnimatedContainerSlideView(), settings.name);
+      break;
+
+    case AnimatedPositionedSlideRoute:
+      return _getPageRoute(AnimatedPositionedSlideView(), settings.name);
+      break;
+
     default:
   }
 }
@@ -48,7 +72,7 @@ class _FadeRoute extends PageRouteBuilder {
                 curve: Curves.easeInOutCirc,
               ),
             ),
-                child: child,
-              ),
+            child: child,
+          ),
         );
 }
