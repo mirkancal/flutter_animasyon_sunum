@@ -31,6 +31,7 @@ class _FadeRoute extends PageRouteBuilder {
           ) =>
               child,
           settings: RouteSettings(name: "$routeName"),
+          transitionDuration: Duration(milliseconds: 600),
           transitionsBuilder: (
             BuildContext context,
             Animation<double> animation,
@@ -44,27 +45,10 @@ class _FadeRoute extends PageRouteBuilder {
             ).animate(
               CurvedAnimation(
                 parent: animation,
-                curve: Curves.fastOutSlowIn,
+                curve: Curves.easeInOutCirc,
               ),
             ),
-            child: RotationTransition(
-              turns: Tween<double>(
-                begin: 0.0,
-                end: 1.0,
-              ).animate(
-                CurvedAnimation(
-                  parent: animation,
-                  curve: Curves.linear,
-                ),
-              ),
-              child: SlideTransition(
-                position: Tween<Offset>(
-                  begin: const Offset(-1, 0),
-                  end: Offset.zero,
-                ).animate(animation),
                 child: child,
               ),
-            ),
-          ),
         );
 }
