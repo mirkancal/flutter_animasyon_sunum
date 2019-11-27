@@ -25,7 +25,6 @@ class _SpringAnimationExampleState extends State<SpringAnimationExample>
       vsync: this,
       upperBound: 500,
     )..addListener(() {
-        print(_firstController.value);
         setState(() {});
       });
 
@@ -37,7 +36,6 @@ class _SpringAnimationExampleState extends State<SpringAnimationExample>
       vsync: this,
       upperBound: 500,
     )..addListener(() {
-        print(_secondController.value);
         setState(() {});
       });
 
@@ -78,6 +76,7 @@ class _SpringAnimationExampleState extends State<SpringAnimationExample>
   @override
   void dispose() {
     _firstController.dispose();
+    _secondController.dispose();
     super.dispose();
   }
 }

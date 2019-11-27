@@ -81,6 +81,7 @@ class _GravityAnimationExampleState extends State<GravityAnimationExample>
   @override
   void dispose() {
     firstController.dispose();
+    secondController.dispose();
     super.dispose();
   }
 }
