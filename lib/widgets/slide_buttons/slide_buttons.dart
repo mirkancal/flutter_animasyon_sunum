@@ -2,11 +2,30 @@ import 'package:animation_presentation/constants/app_colors.dart';
 import 'package:animation_presentation/services/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'dart:html' as html;
 
-class SlideButtons extends StatelessWidget {
+class SlideButtons extends StatefulWidget {
   const SlideButtons({
     Key key,
   }) : super(key: key);
+
+  @override
+  _SlideButtonsState createState() => _SlideButtonsState();
+}
+
+class _SlideButtonsState extends State<SlideButtons> {
+  @override
+  void initState() {
+    html.window.addEventListener('keydown', (event) {
+      html.KeyboardEvent kevent = event as html.KeyboardEvent;
+      if (kevent.keyCode == 37) {
+        Provider.of<NavigationService>(context).goBack();
+      } else if (kevent.keyCode == 39) {
+        Provider.of<NavigationService>(context).navigateToNext();
+      }
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
