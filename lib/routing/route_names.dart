@@ -9,3 +9,5 @@ const String AnimatedOpacitySlideRoute = 'animated_opacity';
 const String AnimatedContainerSlideRoute = 'animated_container';
 
 const String AnimatedPositionedSlideRoute = 'animated_positioned';
+
+const String AnimatedDefaultTextStyleSlideRoute = "animated_default_text_style";

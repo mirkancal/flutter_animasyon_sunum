@@ -1,5 +1,6 @@
 import 'package:animation_presentation/routing/route_names.dart';
 import 'package:animation_presentation/views/animated_container_slide/animated_container_slide_view.dart';
+import 'package:animation_presentation/views/animated_default_text_style_slide/animated_default_text_style_slide_view.dart';
 import 'package:animation_presentation/views/animated_opacity_slide/animated_opacity_slide_view.dart';
 import 'package:animation_presentation/views/animated_positioned_slide/animated_positioned_slide_view.dart';
 import 'package:animation_presentation/views/animation_functions_slide/animation_functions_slide_view.dart';
@@ -33,6 +34,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
     case AnimatedPositionedSlideRoute:
       return _getPageRoute(AnimatedPositionedSlideView(), settings.name);
+      break;
+
+    case AnimatedDefaultTextStyleSlideRoute:
+      return _getPageRoute(AnimatedDefaultTextStyleSlideView(), settings.name);
       break;
 
     default:
