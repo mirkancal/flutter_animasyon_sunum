@@ -4,6 +4,7 @@ import 'package:animation_presentation/views/animated_default_text_style_slide/a
 import 'package:animation_presentation/views/animated_opacity_slide/animated_opacity_slide_view.dart';
 import 'package:animation_presentation/views/animated_positioned_slide/animated_positioned_slide_view.dart';
 import 'package:animation_presentation/views/animation_functions_slide/animation_functions_slide_view.dart';
+import 'package:animation_presentation/views/gravity_animation_slide/gravity_animation_slide_view.dart';
 import 'package:animation_presentation/views/home/home_view.dart';
 import 'package:animation_presentation/views/implicit_animations/implicit_animations_slide_view.dart';
 
@@ -38,6 +39,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
     case AnimatedDefaultTextStyleSlideRoute:
       return _getPageRoute(AnimatedDefaultTextStyleSlideView(), settings.name);
+      break;
+
+    case GravityAnimationSlideRoute:
+      return _getPageRoute(GravityAnimationSlideView(), settings.name);
       break;
 
     default:

@@ -37,6 +37,7 @@ class NavigationService {
     AnimatedContainerSlideRoute,
     AnimatedPositionedSlideRoute,
     AnimatedDefaultTextStyleSlideRoute,
+    GravityAnimationSlideRoute
   ];
   int currentIndex = 0;
 }
