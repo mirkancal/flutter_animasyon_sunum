@@ -18,7 +18,7 @@ class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
         children: <Widget>[
           AnimatedPositioned(
             curve: Curves.elasticIn,
-            duration: Duration(seconds: 2),
+            duration: Duration(seconds: 1),
             right: right,
             top: top,
             child: FlutterLogo(
