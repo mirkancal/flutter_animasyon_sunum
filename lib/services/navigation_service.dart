@@ -36,6 +36,9 @@ class NavigationService {
     AnimatedOpacitySlideRoute,
     AnimatedContainerSlideRoute,
     AnimatedPositionedSlideRoute,
+    AnimatedDefaultTextStyleSlideRoute,
+    GravityAnimationSlideRoute,
+    SpringAnimationSlideRoute,
   ];
   int currentIndex = 0;
 }

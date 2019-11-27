@@ -11,7 +11,7 @@ class SlideTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: Alignment(0, -0.8),
+      alignment: Alignment(0, -0.95),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Text(

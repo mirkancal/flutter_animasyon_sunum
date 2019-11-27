@@ -32,7 +32,7 @@ final themeData = ThemeData(
     display1: TextStyle(color: backgroundColor, fontSize: 24),
     headline: TextStyle(color: backgroundColor, fontSize: 16),
     title:
-        TextStyle(color: textColor, fontSize: 80, fontWeight: FontWeight.w800),
+        TextStyle(color: textColor, fontSize: 70, fontWeight: FontWeight.w800),
     button: TextStyle(color: accentColor, fontSize: 24),
   ),
 );
