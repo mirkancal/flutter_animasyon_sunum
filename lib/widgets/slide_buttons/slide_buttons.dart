@@ -14,16 +14,18 @@ class SlideButtons extends StatefulWidget {
 }
 
 class _SlideButtonsState extends State<SlideButtons> {
+  void keyboardNavigationListener(event) {
+    html.KeyboardEvent kevent = event as html.KeyboardEvent;
+    if (kevent.keyCode == 37) {
+      Provider.of<NavigationService>(context).goBack();
+    } else if (kevent.keyCode == 39) {
+      Provider.of<NavigationService>(context).navigateToNext();
+    }
+  }
+
   @override
   void initState() {
-    html.window.addEventListener('keydown', (event) {
-      html.KeyboardEvent kevent = event as html.KeyboardEvent;
-      if (kevent.keyCode == 37) {
-        Provider.of<NavigationService>(context).goBack();
-      } else if (kevent.keyCode == 39) {
-        Provider.of<NavigationService>(context).navigateToNext();
-      }
-    });
+    html.window.addEventListener('keydown', keyboardNavigationListener);
     super.initState();
   }
 
@@ -57,5 +59,11 @@ class _SlideButtonsState extends State<SlideButtons> {
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    html.window.removeEventListener('keydown', keyboardNavigationListener);
+    super.dispose();
   }
 }
