@@ -40,6 +40,9 @@ class NavigationService {
     GravityAnimationSlideRoute,
     SpringAnimationSlideRoute,
     CustomPaintRectangleSlideRoute,
+    CustomPaintCircleSlideRoute,
+    CustomPaintPathSlideRoute,
+    CustomPaintHeartSlideRoute,
   ];
   int currentIndex = 0;
 }
