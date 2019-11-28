@@ -21,11 +21,16 @@ class PathPainter extends CustomPainter {
     var height = size.height;
     var width = size.width;
 
-    var paint = Paint()..color = primaryColor..strokeWidth = 10..style = PaintingStyle.stroke;
-//    var path = Path()..addRect(Rect.fromLTWH(50, 50, 50, 50));
+    var paint = Paint()
+      ..color = primaryColor
+      ..strokeWidth = 10
+      ..style = PaintingStyle.stroke;
+
     var path = Path()
       ..moveTo(30, 30)
-      ..lineTo(70, 70)..addArc(, startAngle, sweepAngle)
+      ..lineTo(200, 200)
+      ..quadraticBezierTo(200, 0, 150, 100)
+      ..lineTo(300, 100);
     canvas.drawPath(path, paint);
   }
 
