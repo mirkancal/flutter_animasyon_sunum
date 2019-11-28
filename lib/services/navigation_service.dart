@@ -39,6 +39,7 @@ class NavigationService {
     AnimatedDefaultTextStyleSlideRoute,
     GravityAnimationSlideRoute,
     SpringAnimationSlideRoute,
+    CustomPaintRectangleSlideRoute,
   ];
   int currentIndex = 0;
 }

@@ -15,3 +15,11 @@ const String AnimatedDefaultTextStyleSlideRoute = "animated_default_text_style";
 const String GravityAnimationSlideRoute = "gravity_animation";
 
 const SpringAnimationSlideRoute = "spring_animation";
+
+const CustomPaintRectangleSlideRoute = "rectangle_paint";
+
+const CustomPaintCircleSlideRoute = "circle_paint";
+
+const CustomPaintPathSlideRoute = "path_paint";
+
+const CustomPaintHeartSlideRoute = "heart_paint";

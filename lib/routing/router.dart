@@ -8,6 +8,7 @@ import 'package:animation_presentation/views/gravity_animation_slide/gravity_ani
 import 'package:animation_presentation/views/home/home_view.dart';
 import 'package:animation_presentation/views/implicit_animations/implicit_animations_slide_view.dart';
 import 'package:animation_presentation/views/spring_animation_slide/spring_animation_slide_view.dart';
+import 'package:animation_presentation/views/custom_paint_rectangle_slide/custom_paint_rectangle_slide_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -50,6 +51,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(SpringAnimationSlideView(), settings.name);
       break;
 
+    case CustomPaintRectangleSlideRoute:
+      return _getPageRoute(CustomPaintRectangleSlideView(), settings.name);
+      break;
     default:
   }
 }
