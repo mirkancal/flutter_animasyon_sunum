@@ -17,7 +17,6 @@ class _GravityAnimationExampleState extends State<GravityAnimationExample>
 
   GravitySimulation secondSimulation;
 
-  GravitySimulation thirdSimulation;
 
   @override
   void initState() {
@@ -71,6 +70,16 @@ class _GravityAnimationExampleState extends State<GravityAnimationExample>
             width: 50,
             child: Container(
               color: Colors.green,
+            ),
+          ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: FloatingActionButton(
+              child: Icon(Icons.play_arrow),
+              onPressed: () {
+                firstController.animateWith(firstSimulation);
+                secondController.animateWith(secondSimulation);
+              },
             ),
           )
         ],

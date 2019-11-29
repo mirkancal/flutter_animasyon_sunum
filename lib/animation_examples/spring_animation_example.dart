@@ -68,6 +68,16 @@ class _SpringAnimationExampleState extends State<SpringAnimationExample>
               color: Colors.blue[900],
             ),
           ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: FloatingActionButton(
+              child: Icon(Icons.play_arrow),
+              onPressed: () {
+                _firstController.animateWith(_firstSimulation);
+                _secondController.animateWith(_secondSimulation);
+              },
+            ),
+          )
         ],
       ),
     );

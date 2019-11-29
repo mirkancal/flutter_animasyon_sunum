@@ -9,7 +9,7 @@ class CustomPainterSlideContentDesktop extends StatelessWidget {
     return SlideStack(
       children: <Widget>[
         SlideTitle(
-          title: "CustomPainter",
+          title: "CustomPaint ve CustomPainter",
         ),
         Padding(
           padding: const EdgeInsets.all(50),

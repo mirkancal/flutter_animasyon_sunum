@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class CustomPaintHeartExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -6,16 +7,20 @@ class CustomPaintHeartExample extends StatelessWidget {
       child: CustomPaint(
         foregroundPainter: HeartPainter(),
         child: Container(
-          color: Colors.blue,
-          height: 500,
-          width: 500,
+          height: 400,
+          width: 400,
+          child: Material(
+            borderRadius: BorderRadius.circular(16),
+            color: Colors.blue,
+            elevation: 10,
+          ),
         ),
       ),
     );
   }
 }
 
-class HeartPainter extends CustomPainter{
+class HeartPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var width = size.width;
@@ -24,14 +29,16 @@ class HeartPainter extends CustomPainter{
 
     var path = Path();
 
-    path..moveTo(width * 0.5, 100)..cubicTo(
-      width * 0.25,
-      25,
-      0,
-      80,
-      width * 0.5,
-      height - 100,
-    );
+    path
+      ..moveTo(width * 0.5, 100)
+      ..cubicTo(
+        width * 0.25,
+        25,
+        0,
+        100,
+        width * 0.5,
+        height - 100,
+      );
 
     path
       ..moveTo(width * 0.5, 100)
@@ -39,7 +46,7 @@ class HeartPainter extends CustomPainter{
         width * 0.75,
         25,
         width,
-        80,
+        100,
         width * 0.5,
         height - 100,
       );
@@ -49,5 +56,4 @@ class HeartPainter extends CustomPainter{
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
-
 }

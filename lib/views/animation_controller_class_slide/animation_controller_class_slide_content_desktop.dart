@@ -21,7 +21,7 @@ class AnimationControllerClassSlideContentDesktop extends StatelessWidget {
               children: <Widget>[
                 SlideBulletPoint(
                   text:
-                      "Hardware yeni frame’e hazır olduğunda yeni değer üreten özel bir animasyon objesi.",
+                      "Donanım yeni frame’e hazır olduğunda yeni değer üreten özel bir animasyon objesi.",
                 ),
                 SlideBulletPoint(
                   text:
