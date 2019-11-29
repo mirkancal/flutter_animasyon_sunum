@@ -27,7 +27,7 @@ class AnimationClassSlideContentDesktop extends StatelessWidget {
                       "Rendering ve build() fonksiyonu hakkında(ekranda ne olduğunu) birşey bilmiyor",
                 ),
                 SlideBulletPoint(
-                  text: "İki değer arasında, verilen sürniede sayılar üretir",
+                  text: "İki değer arasında, verilen sürede sayılar üretir",
                 ),
                 SlideBulletPoint(
                   text:

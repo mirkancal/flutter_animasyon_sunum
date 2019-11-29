@@ -18,8 +18,6 @@ class CustomPaintPathExample extends StatelessWidget {
 class PathPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    var height = size.height;
-    var width = size.width;
 
     var paint = Paint()
       ..color = primaryColor
