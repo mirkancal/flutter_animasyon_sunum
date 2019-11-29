@@ -71,6 +71,7 @@ double randomMargin() {
   return Random().nextDouble() * 64;
 }
 
+// TODO Get it from array
 Color randomColor() {
   return Color(0xFFFFFFFF & Random().nextInt(0xFFFFFFFF));
 }

@@ -3,15 +3,21 @@ import 'package:animation_presentation/views/animated_container_slide/animated_c
 import 'package:animation_presentation/views/animated_default_text_style_slide/animated_default_text_style_slide_view.dart';
 import 'package:animation_presentation/views/animated_opacity_slide/animated_opacity_slide_view.dart';
 import 'package:animation_presentation/views/animated_positioned_slide/animated_positioned_slide_view.dart';
+import 'package:animation_presentation/views/animation_class_slide/animation_class_slide_view.dart';
+import 'package:animation_presentation/views/animation_controller_class_slide/animation_controller_class_slide_view.dart';
 import 'package:animation_presentation/views/animation_functions_slide/animation_functions_slide_view.dart';
+import 'package:animation_presentation/views/animation_terms_slide/animation_terms_slide_view.dart';
 import 'package:animation_presentation/views/custom_paint_circle_slide/custom_paint_circle_slide_view.dart';
 import 'package:animation_presentation/views/custom_paint_heart_slide/custom_paint_heart_slide_view.dart';
 import 'package:animation_presentation/views/custom_paint_path_slide/custom_paint_path_slide_view.dart';
+import 'package:animation_presentation/views/custom_painter_slide/custom_painter_slide_view.dart';
 import 'package:animation_presentation/views/gravity_animation_slide/gravity_animation_slide_view.dart';
 import 'package:animation_presentation/views/home/home_view.dart';
 import 'package:animation_presentation/views/implicit_animations/implicit_animations_slide_view.dart';
+import 'package:animation_presentation/views/physics_based_slide/physics_based_slide_view.dart';
 import 'package:animation_presentation/views/spring_animation_slide/spring_animation_slide_view.dart';
 import 'package:animation_presentation/views/custom_paint_rectangle_slide/custom_paint_rectangle_slide_view.dart';
+import 'package:animation_presentation/views/tween_class_slide/tween_class_slide_view.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -66,6 +72,30 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       break;
     case CustomPaintHeartSlideRoute:
       return _getPageRoute(CustomPaintHeartSlideView(), settings.name);
+      break;
+
+    case AnimationTermsSlideRoute:
+      return _getPageRoute(AnimationTermsSlideView(), settings.name);
+      break;
+
+    case AnimationClassSlideRoute:
+      return _getPageRoute(AnimationClassSlideView(), settings.name);
+      break;
+
+    case AnimationControllerClassSlideRoute:
+      return _getPageRoute(AnimationControllerClassSlideView(), settings.name);
+      break;
+
+    case TweenClassSlideRoute:
+      return _getPageRoute(TweenClassSlideView(), settings.name);
+      break;
+
+    case PhysicsBasedSlideRoute:
+      return _getPageRoute(PhysicsBasedSlideView(), settings.name);
+      break;
+
+    case CustomPainterSlideRoute:
+      return _getPageRoute(CustomPainterSlideView(), settings.name);
       break;
     default:
   }

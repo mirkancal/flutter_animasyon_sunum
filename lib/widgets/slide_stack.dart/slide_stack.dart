@@ -36,21 +36,21 @@ class SlidePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final width = size.width;
     final height = size.height;
-    Path path = Path()..moveTo(5, height * 0.3);
+    Path path = Path()..moveTo(width - 5, 0);
     var paint = Paint()
       ..color = accentColor
-      ..style = PaintingStyle.stroke
+      ..style = PaintingStyle.fill
       ..strokeWidth = 5;
 
     num degToRad(num deg) => deg * (pi / 180.0);
-    path.cubicTo(
-      width * 0.1,
-      0,
-      width * 0.2,
-      height * 0.9,
-      width * 0.5,
-      height * 0.99,
-    );
+    // path.cubicTo(
+    //   width * 0.9,
+    //   height * 0.1,
+    //   width * 0.8,
+    //   height * 0.7,
+    //   width - 5,
+    //   height * 0.9,
+    // );
 
     canvas.drawPath(path, paint);
   }

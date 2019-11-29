@@ -12,9 +12,21 @@ const String AnimatedPositionedSlideRoute = 'animated_positioned';
 
 const String AnimatedDefaultTextStyleSlideRoute = "animated_default_text_style";
 
+const String AnimationTermsSlideRoute = "animation_terms";
+
+const String AnimationClassSlideRoute = "animation_class";
+
+const String AnimationControllerClassSlideRoute = "animation_controller_class";
+
+const String TweenClassSlideRoute = "tween_class";
+
+const String PhysicsBasedSlideRoute = "physics_based";
+
 const String GravityAnimationSlideRoute = "gravity_animation";
 
 const SpringAnimationSlideRoute = "spring_animation";
+
+const CustomPainterSlideRoute = "custom_painter";
 
 const CustomPaintRectangleSlideRoute = "rectangle_paint";
 
