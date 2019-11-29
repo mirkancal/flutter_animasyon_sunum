@@ -73,5 +73,10 @@ double randomMargin() {
 
 // TODO Get it from array
 Color randomColor() {
-  return Color(0xFFFFFFFF & Random().nextInt(0xFFFFFFFF));
+  return Color.fromARGB(
+    Random().nextInt(256),
+    Random().nextInt(256),
+    Random().nextInt(256),
+    Random().nextInt(256),
+  );
 }
