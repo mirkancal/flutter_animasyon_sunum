@@ -23,11 +23,19 @@ class CirclePainter extends CustomPainter {
     var width = size.width;
 
     var paint = Paint()..color = primaryColor;
-    var radius = min(height, width) * 0.3;
+    var radius = width * 0.3;
 
     canvas.drawCircle(Offset(width * 0.5, height * 0.5), radius, paint);
-    canvas.drawCircle(Offset(width * 0.5, height * 0.5), radius*0.5, paint..color = accentColor);
-    canvas.drawCircle(Offset(width * 0.6, height * 0.6), radius*0.3, paint..color = Colors.amber);
+    canvas.drawCircle(
+      Offset(width * 0.5, height * 0.5),
+      radius * 0.5,
+      paint..color = accentColor,
+    );
+    canvas.drawCircle(
+      Offset(width * 0.6, height * 0.6),
+      radius * 0.3,
+      paint..color = Colors.amber,
+    );
   }
 
   @override
